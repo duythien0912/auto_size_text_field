@@ -313,6 +313,9 @@ class AutoSizeTextField extends StatefulWidget {
   /// {@macro flutter.widgets.editableText.cursorWidth}
   final double cursorWidth;
 
+  /// {@macro flutter.widgets.editableText.cursorHeight}
+  final double cursorHeight;
+
   /// {@macro flutter.widgets.editableText.cursorRadius}
   final Radius? cursorRadius;
 
@@ -458,6 +461,7 @@ class AutoSizeTextField extends StatefulWidget {
     this.onSubmitted,
     this.inputFormatters,
     this.enabled,
+    this.cursorHeight,
     this.cursorWidth = 2.0,
     this.cursorRadius,
     this.cursorColor,
@@ -571,6 +575,7 @@ class _AutoSizeTextFieldState extends State<AutoSizeTextField> {
         controller: widget.controller,
         cursorColor: widget.cursorColor,
         cursorRadius: widget.cursorRadius,
+        cursorHeight: widget.cursorHeight,
         cursorWidth: widget.cursorWidth,
         decoration: widget.decoration,
         dragStartBehavior: widget.dragStartBehavior,
